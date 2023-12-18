@@ -1,0 +1,45 @@
+{% extends 'facerecognition/dashboard.html'%}
+
+<head>
+<style>
+    .table{
+        font-size: 13px!important;
+        text-align: center!important;
+        width: 95%!important;
+        margin: auto!important;
+        text-align: center!important;
+        border: 8px double green!important;
+    }    
+ 
+
+</style>
+</head>
+{%block content%}
+   
+<div class="outer_container">
+    <h1>Attendance report</h1>
+ </div>
+<div style="margin-left:auto;margin-right:auto;padding:50px;">  
+    
+    <!-- <table id="table" class="display" style="width: 100%;border:4px;">
+        <thead>
+          <tr>
+            {% for header in headers %}
+            <th>{{ header }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            {% for row in data %}
+                <td>{{ row }}</td><br>
+            {% endfor %}
+          </tr>
+        </tbody>
+ -->
+{% include 'facerecognition/Table.html'%}
+   
+  
+
+</div>
+{%endblock %}
